@@ -3,7 +3,7 @@
 			
 			<div class = "flex-container" >
 				<div class = "flex-item" >
-					<img src = "imgs/chicken_rice.jpg" />
+					<img src = "imgs/chicken_rice.jpg" class="dropshadow" />
 				</div>
 				<div class = "flex-item">
 					<?php include ("demo_recipe.html"); ?>

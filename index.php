@@ -8,16 +8,19 @@
 			</div>
 			<div class = "flex-container icons" >
 				<div class = "flex-item" >
+					<a href= 'listing.php?type=breakfast' >
 					<img src= "imgs/breakfast_icon.png"/>
-					<a href= 'listing.php?type=breakfast' >Breakfast</a> 
+					<br/>Breakfast</a> 
 				</div>
 				<div class = "flex-item" >
+					<a href= 'listing.php?type=lunch' >
 					<img src= "imgs/lunch_icon.png"/>
-					<a href= 'listing.php?type=lunch' >Lunch</a>  
+					<br/>Lunch</a>  
 				</div>
 				<div class = "flex-item" >
+					<a href= 'listing.php?type=dinner' >
 					<img src= "imgs/dinner_icon.png"/>
-					<a href= 'listing.php?type=dinner' >Dinner</a> 
+					<br/>Dinner</a> 
 				</div>
 
 			</div>

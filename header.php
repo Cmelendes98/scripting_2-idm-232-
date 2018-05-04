@@ -28,8 +28,11 @@
 				<div>
 					 <a href=''>Recipies</a>
 				</div>
-				<div>
-					 <a href='' class='search-link'>Search <img class='arrow' src='imgs/arrow.png'/></a>
+				<div class="dropdown">
+					 <span><a href='' class='search-link'>Search <img class='arrow' src='imgs/arrow.png'/></a></span>
+					 <div class="dropdown-content">
+					 	<input type="text" placeholder="Yummy Recipies head!"/>
+					 </div>
 				</div>
 			</nav>
 		

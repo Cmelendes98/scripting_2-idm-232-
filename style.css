@@ -23,13 +23,33 @@
     flex-wrap:wrap;
     justify-content: space-around;
 }
+.listing_page .flex-item {
+        padding: 15px;
+}
 .listing_page .flex-container {
     flex-wrap:nowrap;
 }
 
  .home_page .flex-item img{
-    max-width: 250px;
+    max-width: 150px;
     padding: 5px;
+ }
+ .listing_page a {
+    padding: 10px;
+    background: #669b23;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 22px;
+ }
+ .listing_page .drop-shadow{
+        -webkit-box-shadow: 0px 6px 46px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 46px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 46px -5px rgba(0,0,0,0.75);
+    margin-bottom: 17px;
+    margin-top: 16px;
+    position: relative;
  }
 
  .fullscreen-bg {
@@ -39,6 +59,18 @@
     left: 0;
     overflow: hidden;
     z-index: -100;
+    -webkit-box-shadow: 0px 6px 46px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 46px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 46px -5px rgba(0,0,0,0.75);
+}
+.dropshadow {
+    -webkit-box-shadow: 0px 6px 46px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 46px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 46px -5px rgba(0,0,0,0.75);
+}
+.recipe_page .flex-item {
+    padding: 20px;
+
 }
 
 .fullscreen-bg__video {
@@ -77,10 +109,17 @@ header {
 }
 .icons {
     padding: 50px 0px;
+    justify-content: center;
+}
+.icons .flex-item {
+    padding: 0px 50px;
 }
 .icons .flex-item a {
     display: block;
     text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
 }
 .our-mission {
     padding: 10px;
@@ -166,6 +205,24 @@ textarea, input {
     opacity: 1;
     z-index: 2;
 } 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 9999;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 /* BEGIN SIDE NAV FOR MOBILE */
 .sidenav {
