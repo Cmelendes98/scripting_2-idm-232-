@@ -218,6 +218,9 @@ textarea, input {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 9999;
+    right:0;
+    border-radius: 5px;
+    top: 30px
 }
 
 .dropdown:hover .dropdown-content {
@@ -270,6 +273,16 @@ textarea, input {
 .openLink {
     display:none;       
 }
+.breakfast {
+    background: #FCAE26;
+
+}
+.lunch {
+    background: #87BE3E;
+}
+.dinner {
+    background: #47B1B1;
+}
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
@@ -278,6 +291,17 @@ textarea, input {
 } 
 
 /* END SIDE NAV FOR MOBILE */
+@media screen and (max-width: 1300px) {
+     video {
+        object-fit:none;
+    }
+}
+@media screen and (max-width: 950px) {
+     video {
+        margin-top: -99px
+    }
+}
+
 
 /* media query for anything less than desktop  */
 @media screen and (max-width: 1024px) {
@@ -292,10 +316,83 @@ textarea, input {
     }
 
 }
+@media screen and (min-width: 581px){
+    .icons .flex-item {
+        width:33%;
+    }
+    .icons {
+        flex-wrap: nowrap;
+        padding: 15px 0px;
+    }
+}
 
 /* media query for mobile device and vertical tablet */
-@media screen and (min-width: 0px ) and (max-width: 768px) {
+@media screen and (min-width: 0px ) and (max-width: 580px) {
      header a {
         text-align:center;
-     }
+    }
+    header {
+        display:block;
+
+    }
+    .logo, .logo img {
+        margin: 0px auto;
+        max-width: 250px;
+    }
+    .icons .flex-item {
+        width: 100%;
+        display: block;
+        padding: 10px 0;
+    }
+    .icons .flex-item a {
+        color:white;
+    }
+    .fullscreen-bg {
+        display:none;
+    }
+    .icons {
+        padding:0px;
+    }
+    .listing_page .flex-container {
+        flex-wrap: wrap;
+    }
+    .listing_page .flex-item img, .recipe_page .flex-item img {
+        max-width:100%;
+    }
+    .listing_page .flex-item {
+        padding: 15px 15px 0px 15px;
+    }
+    header nav {
+        text-align: center;
+        margin-right:0px;
+    }
+    .no-mobile {
+        display: none;
+    }
+    .dropdown-content input {
+        display: block;
+        margin:0px auto;
+        padding: 4px 0px;
+        position:relative;
+
+    }
+    .dropdown-content {
+        display: block;
+        position: relative;
+        padding: 3px 5px;
+        border-radius: 28px;
+        top:0px;
+    }
 }
+@media screen and (max-width:920px) {
+    .listing_page .flex-container {
+        flex-wrap:wrap;
+    }
+    .listing_page a {
+        position: relative;
+        bottom:0px;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+}
+

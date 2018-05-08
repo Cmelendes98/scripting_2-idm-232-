@@ -7,17 +7,17 @@
    		 		</video>
 			</div>
 			<div class = "flex-container icons" >
-				<div class = "flex-item" >
+				<div class = "flex-item breakfast" >
 					<a href= 'listing.php?type=breakfast' >
 					<img src= "imgs/breakfast_icon.png"/>
 					<br/>Breakfast</a> 
 				</div>
-				<div class = "flex-item" >
+				<div class = "flex-item lunch" >
 					<a href= 'listing.php?type=lunch' >
 					<img src= "imgs/lunch_icon.png"/>
 					<br/>Lunch</a>  
 				</div>
-				<div class = "flex-item" >
+				<div class = "flex-item dinner" >
 					<a href= 'listing.php?type=dinner' >
 					<img src= "imgs/dinner_icon.png"/>
 					<br/>Dinner</a> 
