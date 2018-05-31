@@ -28,3 +28,4 @@
 			</nav>
 		
 		</header>
+	<?php include ("database.php"); ?>

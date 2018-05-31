@@ -28,6 +28,7 @@
 }
 .listing_page .flex-container {
     flex-wrap:nowrap;
+
 }
 
  .home_page .flex-item img{
@@ -322,7 +323,7 @@ textarea, input {
     }
     .icons {
         flex-wrap: nowrap;
-        padding: 15px 0px;
+        padding: 0px ;
     }
 }
 
