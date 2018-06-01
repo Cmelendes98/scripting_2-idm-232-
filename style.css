@@ -31,6 +31,10 @@
 
 }
 
+.listing_page img {
+    max-width: 400px; 
+}
+
  .home_page .flex-item img{
     max-width: 150px;
     padding: 5px;

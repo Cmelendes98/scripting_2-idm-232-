@@ -43,11 +43,9 @@ function makeQuery($sql) {
 function getAllRecipes(){
 	$sql = "select * from `recipes-main`";
 	$results = makeQuery($sql);
-	echo '<pre>';
-	print_r($results);
-	echo '</pre>';
+	return $results;
+	
 } 
-getAllRecipes(); 
 	
 
 ?>
