@@ -46,6 +46,19 @@ function getAllRecipes(){
 	return $results;
 	
 } 
+//get all ingredients for one recipe
+function getRecipeIngredients($id){
+	$sql = "select * from `recipes-ingredients` where `recipe-id`=".$id;
+	$results = makeQuery($sql);
+	return $results;
+	
+} 
+function getRecipe($id){
+	$sql = "select * from `recipes-main` where `recipe-id`=".$id;
+	$results = makeQuery($sql);
+	return $results;
+	
+} 
 	
 
 ?>

@@ -18,7 +18,7 @@
 					echo $recipe["recipe-description"];
 					?>
 				</p>
-				<a href="recipe.php">view more</a>
+				<a href="recipe.php?id=<?php echo $recipe["recipe-id"]?>" >view more</a>
 
 			</div>	
 		</div>

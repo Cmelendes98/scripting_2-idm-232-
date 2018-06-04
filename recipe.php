@@ -1,18 +1,37 @@
 <?php include ("header.php"); ?>
-		<div class='body_wrap recipe_page'> 
-			
-			<div class = "flex-container" >
-				<div class = "flex-item" >
-					<img src = "imgs/chicken_rice.jpg" class="dropshadow" />
-				</div>
-				<div class = "flex-item">
-					<?php include ("demo_recipe.html"); ?>
+<?php
+$recipe_id = $_GET["id"];
+$recipe = getRecipe($recipe_id);
+$recipe = $recipe[0];
+$path = $recipe["img-folder"].'/'.$recipe["recipe-thumb"];
+?>
+<div class='body_wrap recipe_page'> 
+	<h1> <?php
+	echo $recipe["recipe-title"];
 
-				</div>			 
+	?> 
+	</h1>
+	<div class = "flex-container" >
+		<div class = "flex-item" >
 
-			</div>
-			
-			
-
+		<img class="dropshadow" src = "imgs/r_images/images/<?php echo $path;?>"/>
 		</div>
-		<?php include ("footer.php"); ?>
+		<div class = "flex-item">
+			<h3> Ingredients </h3>
+			<?php 
+			$ingredients = getRecipeIngredients($recipe_id);
+			foreach ($ingredients as $ingredient){
+				echo $ingredient["ingredient-text"]."<br/>";
+
+
+			}
+			 ?>
+
+		</div>			 
+
+	</div>
+	
+	
+
+</div>
+<?php include ("footer.php"); ?>

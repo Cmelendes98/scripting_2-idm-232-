@@ -31,7 +31,7 @@
 
 }
 
-.listing_page img {
+.listing_page img, .recipe_page img {
     max-width: 400px; 
 }
 
