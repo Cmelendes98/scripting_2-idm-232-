@@ -59,6 +59,21 @@ function getRecipe($id){
 	return $results;
 	
 } 
+
+//get all steps for one recipe
+function getRecipeSteps($id){
+	$sql = "select * from `recipes-steps` where `recipe-id`=".$id;
+	$results = makeQuery($sql);
+	return $results;
+	
+} 
+//get all recipes by meal type
+function getAllRecipesByMeal($meal){
+	$sql = "select * from `recipes-main` where meal = '$meal' ";
+	$results = makeQuery($sql);
+	return $results;
+	
+} 
 	
 
 ?>

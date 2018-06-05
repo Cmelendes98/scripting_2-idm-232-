@@ -1,7 +1,12 @@
-<?php include ("header.php"); ?>
+	<?php include ("header.php"); ?>
 <div class='body_wrap listing_page'> 
 	<?php 
-	$recipes = getAllRecipes(); 
+	if($_GET['meal'] != '') {
+		$recipes = getAllRecipesByMeal($_GET['meal']); 
+	}
+	else {
+		$recipes = getAllRecipes(); 
+	}
 	foreach ($recipes as $recipe){
 	?>
 		
