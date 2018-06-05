@@ -111,6 +111,7 @@ header {
     box-shadow: 0px 6px 46px -5px rgba(0,0,0,0.75);
     position:relative;
     background:white;
+    z-index:9999;
 
 }
 .icons {
