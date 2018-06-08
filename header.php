@@ -19,8 +19,15 @@
 				<div class="no-mobile">
 					 <a href='listing.php'>Recipies</a>
 				</div>
+				<div class = "search">
+					<form method = "get" action = "listing.php">
+						<input name= "search" type="text" placeholder="Search for recipies"/>
+					</form>
+				</div>
 				<div class="dropdown">
-					 <span class= "no-mobile"><a href='' class='search-link'>Search <img class='arrow' src='imgs/arrow.png'/></a></span>
+					<div class='dropdown-toggle'>
+					 	<span class= "no-mobile"><a href='' class='search-link'>Search <img class='arrow' src='imgs/arrow.png'/></a></span>
+					</div>
 					 <div class="dropdown-content">
 					 	<input type="text" placeholder=" Search for recipies"/>
 					 </div>

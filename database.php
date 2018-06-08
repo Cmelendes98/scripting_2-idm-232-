@@ -74,6 +74,14 @@ function getAllRecipesByMeal($meal){
 	return $results;
 	
 } 
+
+//get all recipes by meal type
+function searchRecipes($search){
+	$sql = "select * from `recipes-main` where `recipe-description` like '%$search%' ";
+	$results = makeQuery($sql);
+	return $results;
+	
+} 
 	
 
 ?>
