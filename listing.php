@@ -42,7 +42,7 @@
 	}//end if 
 	else {
 		?>
-		<div class = "flex-container" >
+		<div class = "flex-container no-results" >
 			<div class = "flex-item" >
 				no recipes found
 			</div>

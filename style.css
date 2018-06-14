@@ -4,6 +4,8 @@
     padding: 0px;
     margin: 0px;
     font-family: 'Lato', sans-serif;
+    height: 100%;
+
 }
 
 .logo img {
@@ -30,7 +32,9 @@
     flex-wrap:nowrap;
 
 }
-
+.listing_page .no-results .flex-item{
+    padding: 150px 0px;
+}
 .listing_page img, .recipe_page img {
     max-width: 400px; 
 }
@@ -38,6 +42,8 @@
  .home_page .flex-item img{
     max-width: 150px;
     padding: 5px;
+    max-width: 125px;
+    padding: 7px;
  }
  .listing_page a {
     padding: 10px;
@@ -79,7 +85,6 @@
 }
 
 .fullscreen-bg__video {
-    margin-top:-100px;
     top: 0;
     left: 0;
     width: 100%;
@@ -282,21 +287,21 @@ textarea, input {
     max-width: 1100px;
     margin: 0px auto;
     transition: margin-left .5s;
+    /*display: flex;*/
+    height:100%;
+    flex-direction: column;
 }
-
+.body_wrap {
+    flex: 1;
+}
 .openLink {
     display:none;       
 }
-.breakfast {
-    background: #FCAE26;
+.fullscreen-bg {
+    max-height: 350px;
+    overflow: hidden;
+}
 
-}
-.lunch {
-    background: #87BE3E;
-}
-.dinner {
-    background: #47B1B1;
-}
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
@@ -363,6 +368,7 @@ textarea, input {
     }
     .fullscreen-bg {
         display:none;
+
     }
     .icons {
         padding:0px;
@@ -397,7 +403,18 @@ textarea, input {
         border-radius: 28px;
         top:0px;
     }
+    .breakfast {
+        background: #FCAE26;
+
+    }
+    .lunch {
+        background: #87BE3E;
+    }
+    .dinner {
+        background: #47B1B1;
+    }
 }
+
 @media screen and (max-width:920px) {
     .listing_page .flex-container {
         flex-wrap:wrap;
@@ -411,13 +428,19 @@ textarea, input {
 }
 @media screen and (min-width: 800px) {
     .recipe_page .recipe-steps .flex-item  {
-        flex-basis: 40%;
+        flex-basis: 50%;
 
     }
     .recipe_page .recipe-steps .flex-item img {
         max-width: 700px;
 
         
+    }
+    .our-mission {
+        max-width: 50%;
+    }
+    .icons{
+        margin: 44px 0px;
     }
 }
 @media screen and (max-width: 799px) {

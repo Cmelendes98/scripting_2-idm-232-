@@ -18,10 +18,16 @@ $path = $recipe["img-folder"].'/'.$recipe["recipe-thumb"];
 		</div>
 		<div class = "flex-item">
 			<h3> Ingredients </h3>
+			<?php
+			$img = str_replace(".jpg", ".png", $recipe["ingredients-img"]);
+			 ?>
+			<img src = "imgs/r_images/images/<?php echo $recipe["img-folder"].'/'.$img ;?>"/><br/>
 			<?php 
 			$ingredients = getRecipeIngredients($recipe_id);
 			foreach ($ingredients as $ingredient){
-				echo $ingredient["ingredient-text"]."<br/>";
+				?>
+				<?php 
+				echo $ingredient["ingredient-text"]."<br/>"; 
 
 
 			}
@@ -30,8 +36,10 @@ $path = $recipe["img-folder"].'/'.$recipe["recipe-thumb"];
 		</div>			 
 
 	</div>
-	<h3> Steps </h3>
 	<div class = "flex-container recipe-steps" >
+		<div class = "flex-item" > 
+			<h3> Steps </h3> 
+		</div>
 		<?php 
 			$steps = getRecipeSteps($recipe_id);
 			foreach ($steps as $step){
